@@ -1,0 +1,386 @@
+﻿{
+  "Routes": [
+    //#region AUTH
+
+    //Auth - AuthController
+    {
+      "DownstreamPathTemplate": "/api/auth/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/logoff",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/logoff",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Auth/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "auth"
+    },
+    //***********************
+
+    //Auth -CustomerController
+    {
+      "DownstreamPathTemplate": "/api/customer/getall",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customer/getall",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/customer/getbyid",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customer/getbyid",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/customer/add",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customer/add",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/customer/update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customer/update",
+      "UpstreamHttpMethod": [ "Put" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/customer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customer",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/customer/getbyemail",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customer/getbyemail",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "auth"
+    },
+    //***********************
+
+
+    //Auth - AppOperationClaimsController
+    {
+      "DownstreamPathTemplate": "/api/appoperationclaims/getall",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/appoperationclaims/getall",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/appoperationclaims/getbyid",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/appoperationclaims/getbyid",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/appoperationclaims",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/appoperationclaims",
+      "UpstreamHttpMethod": [ "Post", "Put", "Delete" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "SwaggerKey": "auth"
+    },
+    //***********************
+
+    //Auth - AppCustomerClaimsController
+    {
+      "DownstreamPathTemplate": "/api/appcustomerclaims/getall",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/appcustomerclaims/getall",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/appcustomerclaims/getbyuserid",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/appcustomerclaims/getbyuserid",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/appcustomerclaims/getoperationclaimbyuserid",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/appcustomerclaims/getoperationclaimbyuserid",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "auth"
+    },
+    {
+      "DownstreamPathTemplate": "/api/appcustomerclaims",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/api/appcustomerclaims",
+      "UpstreamHttpMethod": [ "Post", "Put", "Delete" ],
+      "SwaggerKey": "auth"
+    },
+    //#endregion
+
+    //#region Order - Product
+    {
+      "DownstreamPathTemplate": "/api/product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/product",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "order"
+    },
+    {
+      "DownstreamPathTemplate": "/api/product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/product",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "order"
+    },
+    {
+      "DownstreamPathTemplate": "/api/product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/product",
+      "UpstreamHttpMethod": [ "Put" ],
+      "SwaggerKey": "order"
+    },
+    {
+      "DownstreamPathTemplate": "/api/product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/product",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "SwaggerKey": "order"
+    },
+
+    //#endregion
+
+    //#region Order - CustomerOrder
+    {
+      "DownstreamPathTemplate": "/api/customerorder",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customerorder",
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "order"
+    },
+    {
+      "DownstreamPathTemplate": "/api/customerorder",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customerorder",
+      "UpstreamHttpMethod": [ "Post" ],
+      "SwaggerKey": "order"
+    },
+    {
+      "DownstreamPathTemplate": "/api/customerorder",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customerorder",
+      "UpstreamHttpMethod": [ "Put" ],
+      "SwaggerKey": "order"
+    },
+    {
+      "DownstreamPathTemplate": "/api/customerorder",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44359
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customerorder",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "SwaggerKey": "order"
+    }
+
+    //#endregion
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7063",
+    "RequestIdKey": "OcRequestId"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "auth",
+      "Config": [
+        {
+          "Name": "Auth API",
+          "Version": "v1",
+          "Url": "https://localhost:44332/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "notification",
+      "Config": [
+        {
+          "Name": "Notification API",
+          "Version": "v1",
+          "Url": "http://localhost:44380/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "order",
+      "Config": [
+        {
+          "Name": "Order API",
+          "Version": "v1",
+          "Url": "http://localhost:44359/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
